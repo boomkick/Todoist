@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+/* Nav */
+.navbar{
+    position: fixed;
+    padding: 0;
+    font-size: 16px;
+    background-color: #fff;
+    color: black;
+    transition: 0.2s ease;
+    width: 100vw;
+    z-index: 1000;
+}
+.navbar .navbar-brand{
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    color: #E44332;
+    font-weight: 900;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #E44332;
+}
+.navbar .navbar-brand .navbar__logo{
+    width: 32px;
+    margin-bottom: 2px;
+}
+.navbar .nav-link{
+    padding: 0;
+    color: black;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(0,0,0,0.7);
+}
+.navbar .navbar-nav .nav-item > a{
+    padding: 22px 16px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.navbar .navbar-nav .nav-item:hover > a{
+    border-bottom: 2px solid #E44232;
+    background-color: #FAFAFA;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link{
+    color: black;
+}
+.navbar .navbar-nav .nav-item i.nav-item__icon{
+    position: absolute;
+    font-size: 13px;
+    top: 30px;
+    right: 11px;
+}
+.navbar .navbar-nav .nav-item:hover i.nav-item__icon{
+    top: 32px;
+    transition: ease 0.2s;
+}
+/* Navbar Dropdown */
+.navbar .navbar-nav .nav-item:nth-child(4) {
+    position: relative;
+}
+.navbar .navbar-nav .nav-item .nav__Dropdown{
+    display: none;
+    position: absolute;
+    top: 85px;
+    z-index: 10000;
+    background-color: #fff;
+    list-style-type: none;
+    max-height: calc(100vh - 5rem);
+    overflow: auto;
+    min-width: 350px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.navbar .navbar-nav .nav-item:hover .nav__Dropdown{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    top: 71px;
+    animation: dropdownFaceIn 0.4s;
+}
+.line{
+    max-width: 302px;
+    border-top: 0.1px solid rgba(0,0,0,0.1);
+    margin-left: 24px;
+}
+.nav__Dropdown:hover{
+    display: block;
+}
+.nav__Dropdown .nav__Dropdown__item{
+    padding: 16px 24px;
+}
+.nav__Dropdown .nav__Dropdown__item__title{
+    margin-bottom: 2px;
+}
+.nav__Dropdown .nav__Dropdown__item__content{
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+.nav__Dropdown .nav__Dropdown__item a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.nav__Dropdown .nav__Dropdown__item:hover{
+    background-color: #FAFAFA;
+}
+@keyframes dropdownFaceIn{
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

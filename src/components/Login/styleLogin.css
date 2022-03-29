@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body .login__around{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+.login p{
+    margin: 0;
+}
+.login{
+    width: 452px;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    padding: 25px;
+}
+.login .login__body{
+    
+}
+.login .login__body h3{
+    font-size: 28px;
+    display: block;
+    margin-bottom: 20px;
+}
+.login .login__body a{
+    text-decoration: none;
+    color: black;
+}
+.login .login__header{
+    margin-bottom: 14px;
+}
+.login .login__body .login__body__btnLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border: 1px solid #DBDBDB;
+    font-size: 13px !important;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.login .login__body .login__body__btnLink:hover{
+    background-color: #EEEEEE;
+    border-color: #999;
+}
+.login .login__body .login__body__btnLink img{
+    width: 16px;
+    margin-right: 8px;
+}
+.login .login__body .login__body__line{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+.login__body__line .line__middleLine{
+    position: absolute;
+    text-transform: uppercase;
+    left: 43%;
+    top: -10px;
+    background-color: #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #777777;
+    font-size: 13px;
+}
+.login .login__input p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+}
+.login .login__input input{
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    padding: 0.75em 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.login .login__input{
+    position: relative;
+}
+.login .login__input .login__input--password i{
+    position: absolute;
+    top: 115px;
+    right: 10px;
+    font-size: 20px;
+    opacity: 0.6;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.login .login__input .login__input--password i:hover{
+    background-color: #EEEEEE;
+}
+
+.login .login__input .login__input--password  .password__icon--show{
+    display: block;
+}
+.login .login__input .login__input--password  .password__icon--hide{
+    display: none;
+}
+.login .login__input .login__button{
+    width: 100%;
+    font-size: 13px;
+    border-radius: 2px;
+    background-color: #DB4C3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 12px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+.login .login__stayInLoggin{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    opacity: 0.7;
+    font-family: 'Roboto', sans-serif;
+}
+.login .login__forgetPassword{
+    font-size: 13px;
+    opacity: 0.7;
+}
+.login .login__forgetPassword:hover{
+    text-decoration: underline;
+}
+.login .login__helpblock{
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 20px;
+    border-top: 1px solid #DDD;
+}
+.login .login__helpblock p{
+    display: block;
+    margin: 20px;
+}
+.login .login__helpblock a{
+    color: #DB4C3F;
+    text-decoration: none;
+}
+.login .login__helpblock .login__support{
+    color: #666666;
+}
+.login .login__helpblock a:hover,
+.login .login__helpblock .login__support:hover{
+    text-decoration: underline;
+}

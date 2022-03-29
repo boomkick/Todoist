@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__title1 {
+  font-size: 70px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.landing__title2 {
+  font-size: 70px;
+  margin: 0 auto;
+}
+
+.landing__start__btn {
+  height: 45px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 30px auto 0px auto;
+  background-color: #e44232;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+}
+
+.landing__image1 {
+  margin: 0px 60px;
+}
+
+.landing__intro {
+  margin: -80px 0px 0px 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  min-height: 300px;
+
+  &__title {
+    margin: 30px auto;
+    font-size: 70px;
+  }
+
+  &__description {
+    margin: 0 auto;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin: 50px auto 0 auto;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgb(83, 111, 236);
+  }
+
+  &__link i {
+    margin-right: 5px;
+  }
+}
+
+.landing__rate {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  &__background {
+    width: 100%;
+  }
+
+  &__wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 140px;
+  }
+
+  &__item {
+  }
+}
+
+.landing__intro1 {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: space-evenly;
+
+  &__title1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__title2 {
+    font-size: 50px;
+  }
+
+  &__video {
+    display: flex;
+    flex-direction: column;
+
+    &__background {
+    }
+  }
+
+  &__link {
+    margin-top: 80px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(83, 111, 236);
+  }
+}
+
+.intro1__video__background {
+  height: 300px;
+  width: 500px;
+  position: relative;
+}
+
+.intro1__video__play {
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: -55px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.212);
+  cursor: pointer;
+}
+
+.landing__quote {
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__card {
+    height: 325px;
+    width: 470px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px rgba(128, 128, 128, 0.473);
+    font-size: 25px;
+    flex-direction: column;
+    padding: 0px 30px;
+    margin: auto;
+  }
+
+  &__text {
+  }
+
+  &__author {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 45px;
+  }
+}
+
+.landing__card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing__author__career {
+  font-size: 15px;
+}
+
+.landing__card__more {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(83, 111, 236);
+}
+
+.landing__quote__image {
+  margin: auto 0px;
+  margin-right: 200px;
+}
+
+.landing__quote__image img {
+  width: 550px;
+  height: 550px;
+}
+
+.landing__quote__btns {
+  display: flex;
+  justify-content: center;
+}
+
+.landing__quote__btn {
+  padding: 22px 20px;
+  border: none;
+  border-top: 5px solid rgba(2, 2, 2, 0.274);
+  background-color: white;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.landing__quote__btn--click {
+  border-top: 5px solid rgb(245, 75, 75);
+}
+
+.landing__wrap__footer {
+  display: flex;
+}
+
+.landing__intro2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 95px;
+
+  &__text {
+    width: 600px;
+  }
+
+  &__header {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  &__body {
+    font-size: 27px;
+  }
+
+  &__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(83, 111, 236);
+  }
+
+  &__image {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.landing__intro3 {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__image {
+    width: 600px;
+    height: 600px;
+  }
+
+  &__wrapper {
+    margin: auto 0px;
+  }
+
+  &__header {
+    font-size: 55px;
+  }
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+
+  &__container{
+    position: relative;
+
+  }
+
+  &__icon{
+    position: absolute;
+    background-color: rgb(202, 202, 202);
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 50px;
+    top: -20px;
+    right: -20px;
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}

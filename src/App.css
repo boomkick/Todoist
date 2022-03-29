@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__title {
+  font-size: 70px;
+  margin: 0 auto;
+}
+
+.landing__start-btn {
+  height: 45px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 30px auto 0px auto;
+  background-color: #e44232;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+}
+
+.landing__image1 {
+  margin: 0px 60px;
+}
+
+.landing__intro {
+  margin: -80px 0px 0px 0px ;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  min-height: 300px;
+}
+
+.landing__intro-title {
+  margin: 30px auto;
+  font-size: 70px;
+}
+
+.landing__intro-description {
+  margin: 0 auto;
+}
+
+.landing__intro-wrap-link {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: 50px auto 0 auto;
+}
+
+.landing__intro-link {
+  text-decoration: none;
+  color: rgb(83, 111, 236);
+}
+
+.landing__intro-link i {
+  margin-right: 5px;
+}
+
+.landing__wrap-rate {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.landing__rate-background {
+  width: 100%;
+}
+
+.landing__rate-item-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 140px;
+}
+
+.landing__rate-item {
+}
+
+.landing__wrap-intro1 {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: space-evenly;
+}
+
+.landing__intro1-title1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.landing__intro1-title2 {
+  font-size: 50px;
+}
+
+.landing__intro1-video {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro1-video-background {
+  height: 300px;
+  width: 500px;
+  position: relative;
+}
+
+.intro1-play-video {
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: -55px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.212);
+}
+
+.landing__intro1-link {
+  margin-top: 80px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(83, 111, 236);
+}
+
+.landing__quotes {
+}
+
+.landing__container-quotes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landing__quotes-card {
+  height: 325px;
+  width: 470px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(128, 128, 128, 0.473);
+  font-size: 25px;
+  flex-direction: column;
+  padding: 0px 30px;
+  margin: auto;
+}
+
+.landing__quotes-text {
+}
+
+.landing__quotes-author {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 45px;
+}
+
+.landing__wrap-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing__author-career {
+  font-size: 15px;
+}
+
+.landing__card-more {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(83, 111, 236);
+}
+
+.landing__quotes-image {
+  margin: auto 0px;
+  margin-right: 200px;
+}
+
+.landing__quotes-image img {
+  width: 550px;
+  height: 550px;
+}
+
+.landing__quotes-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.landing__quote-btn {
+  padding: 22px 20px;
+  border: none;
+  border-top: 5px solid rgba(2, 2, 2, 0.274);
+  background-color: white;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.landing__quote-btn--click {
+  border-top: 5px solid rgb(245, 75, 75);
+}
+
+.landing__wrap-footer {
+  display: flex;
+}
+
+.landing__intro2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 95px;
+}
+
+.landing__intro2-text{
+  width: 600px;
+}
+
+.landing__intro2-header{
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.landing__intro2-body{
+  font-size: 27px;
+}
+
+.landing__intro2-link{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(83, 111, 236);
+}
+
+.landing__intro2-image{
+  width: 600px;
+  height: 600px;
+}
+
+.landing__intro3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landing__intro3-image{
+  width: 600px;
+  height: 600px;
+}
+
+.landing__intro3-wrapper{
+  margin: auto 0px;
+}
+
+.landing__intro3-header{
+  font-size: 55px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__container {
+  position: relative;
+}
+
+.modal__icon {
+  position: absolute;
+  background-color: rgb(202, 202, 202);
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  font-size: 50px;
+  top: -20px;
+  right: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__icon:hover {
+  background-color: rgb(255, 255, 255);
+}
